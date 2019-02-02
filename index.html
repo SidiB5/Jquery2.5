@@ -12,16 +12,18 @@
     <button type="button" name="button">Envoyer</button>
   </form>
   <script>
-    $('#lastName').on('focusin', event => {
-      $(event.currentTarget).css('border', '1px solid green');
-    }).on('focusout', event => {
-      $(event.currentTarget).css('border', '1px solid red');
+    $(document).ready( ()=>{
+      $('#lastName').on('focusin', event => {
+        $(event.currentTarget).css('border', '1px solid green');
+      }).on('focusout', event => {
+        $(event.currentTarget).css('border', '1px solid red');
+      });
+      $('#firstName').on('focusin', event => {
+        $(event.currentTarget).css('border', '1px solid green');
+      }).on('focusout', event => {
+        $(event.currentTarget).css('border', '1px solid red');
+      });
     });
-    $('#firstName').on('focusin', event => {
-      $(event.currentTarget).css('border', '1px solid green');
-    }).on('focusout', event => {
-      $(event.currentTarget).css('border', '1px solid red');
-    })
   </script>
 </body>
 </html>
